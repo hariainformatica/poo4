@@ -1,4 +1,4 @@
-class EjemploExceptiones:
+class EjemploExcepciones:
     #ZeroDivisionError
 
     #ValueError
