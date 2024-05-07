@@ -1,6 +1,6 @@
 import re
 
-class MinVox:
+class RegExample:
     def __init__(self) -> None:
         pass
 
@@ -10,6 +10,10 @@ class MinVox:
         patron = "\\b[aeiou][^\\s.,]*"
         result = re.findall(patron, texto)
         return result
+    
+    @staticmethod
+    def validURL(url:str) -> bool:
+        pass
     
 
 if __name__ == "__main__":
@@ -24,4 +28,4 @@ Nulla quis semper lacus. Donec sed imperdiet magna. Proin fermentum malesuada ul
 
 Ut mi sem, laoreet sagittis dignissim non, semper a velit. Curabitur et arcu justo. Etiam semper sem ut sem cursus, quis gravida nibh faucibus. Proin tincidunt, libero a luctus faucibus, quam ex finibus nisl, et aliquam nunc ante vel risus. Vestibulum quis felis quis orci consectetur vehicula sit amet in metus. Vivamus interdum sagittis elit ut efficitur. Nulla iaculis libero ac ultricies placerat. Vestibulum sollicitudin luctus maximus.
 '''
-    print(MinVox.buscar(text))
+    print(RegExample.buscar(text))
